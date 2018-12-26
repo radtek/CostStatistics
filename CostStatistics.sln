@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CostStatistics", "CostStatistics\CostStatistics.vcproj", "{92F4F841-266B-456D-96CC-C629E1B90195}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7F2793AB-4119-4901-9146-DB0318146D11} = {7F2793AB-4119-4901-9146-DB0318146D11}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZTUILib", "UiFrameWork\ZTUILib\ZTUILib.vcproj", "{7F2793AB-4119-4901-9146-DB0318146D11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92F4F841-266B-456D-96CC-C629E1B90195}.Debug|Win32.ActiveCfg = Debug|Win32
+		{92F4F841-266B-456D-96CC-C629E1B90195}.Debug|Win32.Build.0 = Debug|Win32
+		{92F4F841-266B-456D-96CC-C629E1B90195}.Release|Win32.ActiveCfg = Release|Win32
+		{92F4F841-266B-456D-96CC-C629E1B90195}.Release|Win32.Build.0 = Release|Win32
+		{7F2793AB-4119-4901-9146-DB0318146D11}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7F2793AB-4119-4901-9146-DB0318146D11}.Debug|Win32.Build.0 = Debug|Win32
+		{7F2793AB-4119-4901-9146-DB0318146D11}.Release|Win32.ActiveCfg = Release|Win32
+		{7F2793AB-4119-4901-9146-DB0318146D11}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

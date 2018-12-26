@@ -1,0 +1,379 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\CostStatistics.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CostStatistics.ico"
+IDI_ICON_LOGO           ICON                    "res\\logo.ico"
+IDI_ICON_SETTING        ICON                    "res\\setting.ico"
+IDI_ICON_ADD            ICON                    "res\\add.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 198, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 成本统计系统"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_ICON_LOGO,IDC_STATIC,10,38,18,18
+    LTEXT           "成本统计系统",IDC_STATIC,41,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2018 中铁装备智能工程研究院",IDC_STATIC,41,46,154,8
+    DEFPUSHBUTTON   "确定",IDOK,126,87,50,14,WS_GROUP
+    LTEXT           "版本 V1.0.0.1210 (x32)",IDC_STATIC,41,30,114,8,SS_NOPREFIX
+    LTEXT           "联系方式：0371-60608811/6396",IDC_STATIC,41,62,154,8
+END
+
+IDD_FRAMELEFT_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+IDD_FRAMERIGHT_DIALOG DIALOGEX 0, 0, 612, 329
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_MAIN,"SysTabControl32",0x0,155,88,229,80
+END
+
+IDD_FRAME_DIALOG DIALOGEX 0, 0, 681, 378
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "FrameDialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 760, 351
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "项目号：",IDC_PROJNUM,375,9,33,9
+    EDITTEXT        IDC_PROJNUMEDIT,412,7,89,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "搜索",IDC_SEARTCHBT,538,7,50,14
+    LTEXT           "开始日期：",IDC_SARTDATETEXT,17,9,41,8
+    LTEXT           "结束日期：",IDC_ENDDATETXT,193,9,41,8
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,60,7,100,15
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,238,7,100,15
+END
+
+IDD_LOGIN_DIALOG DIALOGEX 0, 0, 262, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "成本统计系统"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,65,24,159,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,65,55,158,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登录",IDOK,43,100,195,19
+    LTEXT           "用户名：",IDC_STATIC_USER,27,26,33,8
+    LTEXT           "密码：",IDC_STATIC_PWD,30,58,25,8
+    CONTROL         "记住密码",IDC_CHECK_REMEMBER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,79,48,10
+    CONTROL         "自动登录",IDC_CHECK_AUTO_LOGIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,79,48,10
+    PUSHBUTTON      "",IDC_BTN_SETTING,233,23,20,16
+END
+
+IDD_CONFIG_DIALOG DIALOGEX 0, 0, 262, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据库服务器信息配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,145,108,50,14
+    PUSHBUTTON      "取消",IDCANCEL,199,108,50,14
+    EDITTEXT        IDC_EDIT_IP,83,20,149,14,ES_AUTOHSCROLL
+    LTEXT           "服务器IP：",IDC_STATIC1,21,21,40,8
+    EDITTEXT        IDC_EDIT_PORT,82,57,150,14,ES_AUTOHSCROLL
+    LTEXT           "服务器端口：",IDC_STATIC2,18,58,49,8
+    EDITTEXT        IDC_EDIT_NUMBER,84,81,148,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "服务器编号：",IDC_STATIC3,22,82,49,8,NOT WS_VISIBLE
+END
+
+IDD_USER_AUTHORITY_DIALOG DIALOGEX 0, 0, 392, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "权限设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_USER_MGR_DLALOG DIALOGEX 0, 0, 258, 128
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,74,9,157,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER,74,30,157,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PWD,74,51,157,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PWD2,74,72,157,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,141,106,50,14
+    PUSHBUTTON      "取消",IDCANCEL,195,106,50,14
+    LTEXT           "账号：",IDC_STATIC_1,28,31,42,8
+    LTEXT           "密码：",IDC_STATIC_2,28,52,38,8
+    LTEXT           "确认密码：",IDC_STATIC_3,28,73,41,8
+    LTEXT           "用户姓名：",IDC_STATIC_0,28,10,41,8
+END
+
+IDD_DLGPRIVILIDGE DIALOGEX 0, 0, 430, 259
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "权限设置"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,310,238,50,14
+    PUSHBUTTON      "取消",IDCANCEL,369,238,50,14
+END
+
+IDD_PROJ_MGR_DIALOG DIALOGEX 0, 0, 725, 397
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "项目管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "查询",IDOK,592,24,50,14
+    LTEXT           "项目号：",IDC_STATIC,19,26,33,8
+    EDITTEXT        IDC_EDIT1,67,23,99,14,ES_AUTOHSCROLL
+    LTEXT           "开挖直径：",IDC_STATIC,195,26,41,8
+    EDITTEXT        IDC_EDIT2,239,23,95,14,ES_AUTOHSCROLL
+    LTEXT           "项目类型：",IDC_STATIC,357,26,41,8
+    EDITTEXT        IDC_EDIT3,410,23,98,14,ES_AUTOHSCROLL
+END
+
+IDD_PROJ_ADD_DIALOG DIALOGEX 0, 0, 499, 354
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加项目"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,381,323,50,14
+    PUSHBUTTON      "取消",IDCANCEL,435,323,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "中铁装备"
+            VALUE "FileDescription", "成本统计系统"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CostStatistics.exe"
+            VALUE "LegalCopyright", " (C) <中铁装备>。保留所有权利。"
+            VALUE "OriginalFilename", "CostStatistics.exe"
+            VALUE "ProductName", "成本统计系统V1.0"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_FRAMELEFT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 753
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 344
+    END
+
+    IDD_USER_AUTHORITY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_USER_MGR_DLALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_PROJ_MGR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 718
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 390
+    END
+
+    IDD_PROJ_ADD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 492
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 347
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGINBK      BITMAP                  "res\\loginbk.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_PROJMGR MENU 
+BEGIN
+    POPUP "新增"
+    BEGIN
+        MENUITEM "添加",                          ID_ADD
+        MENUITEM "导入",                          ID_IMPORT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CostStatistics(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\CostStatistics.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
